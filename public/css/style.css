@@ -1,0 +1,102 @@
+/* ---------------------------------------------------------------
+                            General
+------------------------------------------------------------------ */
+
+body{
+    background: #D9EAFD !important;
+}
+
+/* ::placeholder{
+    color: gray !important;
+    font-weight: lighter;
+}
+
+label{
+    padding-top: 10% !important;
+} */
+
+/* button{
+    background: #2a1a6f !important;
+} */
+
+/* ---------------------------------------------------------------
+                            #navbar
+------------------------------------------------------------------ */
+
+#navbar nav{
+    background: #1E3E62 !important;
+}
+
+  li a :hover{
+    color: orange;
+    text-transform: lowercase;
+}
+
+.webViewPosition{
+    text-align: start !important;
+}
+
+/* ---------------------------------------------------------------
+                            #carousel
+------------------------------------------------------------------ */
+
+.carouselHeight{
+    height: 100vh;
+}
+
+/* ---------------------------------------------------------------
+                            #login
+------------------------------------------------------------------ */
+
+ body.login {
+    background: red  !important
+}
+
+/* ---------------------------------------------------------------
+                            #footer
+------------------------------------------------------------------ */
+
+#footer
+{
+    background: #173B45;
+}
+
+#social{
+    background: white;
+}
+
+#detail p{
+    text-align: justify;
+}
+
+/* ---------------------------------------------------------------
+                            About
+------------------------------------------------------------------ */
+
+.page-title-area {
+    position: relative;
+    z-index: 1;
+}
+
+.paddingValue label
+{
+    padding: 0 !important;
+}
+
+/* ---------------------------------------------------------------
+                            Media Query
+------------------------------------------------------------------ */
+
+@media (max-width:992px) {
+    #navbarsExample11{
+        justify-content: center !important;
+    }
+
+    .mobileViewButton{
+        background: white !important;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
