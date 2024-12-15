@@ -1,9 +1,9 @@
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color:red;">
+<aside class="main-sidebar sidebar-dark-teal elevation-4" style="background-color:#176B87">
     <!-- Brand Logo -->
     <a href="/admin/dashboard" class="brand-link">
       <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Admin</span>
+      <span class="brand-text font-weight-light text-white">Admin</span>
     </a>
 
     <!-- Sidebar -->
@@ -14,7 +14,7 @@
           <img src="<%= i.url %>" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="/admin/dashboard" class="d-block"><%= n%></a>
+          <a href="/admin/dashboard" class="d-block"><b><%= n%></b></a>
         </div>
       </div>
 
@@ -114,8 +114,8 @@
               
             </ul>
           </li>
-          <li class="nav-item">
-            <a href="/Logout" class="nav-link">
+          <li class="nav-item ">
+            <a href="/Logout" class="nav-link active">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Logout

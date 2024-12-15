@@ -250,7 +250,7 @@ class FrontController {
               password: newHashPassword,
             });
             req.flash("success", "Password Updated successfully ");
-            res.redirect("/");
+            res.redirect("/home");
           }
         }
       } else {

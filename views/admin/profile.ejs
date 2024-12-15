@@ -2,13 +2,13 @@
   <%- include('./sidebar.ejs') %>
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
+    <div class="content-wrapper" style="background-color: #9CAFAA;">
       <!-- Content Header (Page header) -->
       <div class="content-header">
         <div class="container-fluid">
-          <div class="row mb-2">
+          <div class="row mb-2"> 
             <div class="col-sm-6">
-              <h1 class="m-0">Profile</h1>
+              <h1 class="m-0 text-primary">Profile</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
@@ -24,28 +24,30 @@
 
       <!-- Main content -->
       <div class="content">
-        <div class="container-fluid">
-          <div class="card">
+        <div class="container-fluid" style="padding-left: 450px; " >
+          <div class="card"style="width: 40rem; height: 40rem; " >
             <!-- /.card-header -->
-            <div class="card-body">
+          
+            <div class="card-body  " style="background: #FEECE2;">
+              <center><h3 style="color:orangered;" >Update Profile</h3></center>
                 <form action="/admin/updateProfile" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
-                        <label for="">Name</label>
+                        <label for="">Name :</label>
                         <input type="text" value="<%= n %>" name="name" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <label for="">Email</label>
+                        <label for="">Email :</label>
                         <input type="text" value="<%= e %>" name="email" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <label for="">Image</label>
+                        <label for="">Image :</label>
                         <br>
-                        <img src="<%= i.url %>" alt="" width="100">
+                        <img src="<%= i.url %>" alt="" width="40%" height="200px" style="border-radius: 100%;">
                         <br> <br>
                         <input type="file"  name="image" class="form-control">
                     </div>
                     
-                    <button type="submit" class="btn btn-info">Update Profile</button>
+                    <button type="submit" class="btn btn-info">Update Profile </button>
 
                 </form>
             </div>
@@ -53,6 +55,7 @@
           </div>
           <!-- /.card -->
         </div><!-- /.container-fluid -->
+        <div class="col-md-4"></div>
       </div>
       <!-- /.content -->
     </div>

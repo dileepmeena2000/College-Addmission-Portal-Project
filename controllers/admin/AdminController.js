@@ -235,9 +235,12 @@ static changePassword = async (req, res) => {
             const newHashPassword = await bcrypt.hash(np, 10);
             await UserModel.findByIdAndUpdate(id, {
               password: newHashPassword,
+            
+              
             });
             req.flash("success", "Password Updated successfully ");
-            res.redirect("/");
+
+            res.redirect("/admin/dashboard");
           }
         }
       } else {
