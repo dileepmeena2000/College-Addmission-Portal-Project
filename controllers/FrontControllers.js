@@ -139,7 +139,7 @@ class FrontController {
 
       auth: {
         user: "dileepmeena975@gmail.com",
-        pass: "hhxi lhse vmby kbzf",
+        pass: "hhxilhsevmbykbzf",
       },
     });
     let info = await transporter.sendMail({

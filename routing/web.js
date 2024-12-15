@@ -11,7 +11,7 @@ const adminRole = require("../middleware/adminRole");
 
 // frontcontrollers Routing
 
-route.get("/", isLogin, FrontController.login);
+route.get("/",isLogin,FrontController.login);
 route.get("/home", checkAuth, FrontController.home);
 route.get("/about", checkAuth, FrontController.about);
 route.get("/register", FrontController.register);
