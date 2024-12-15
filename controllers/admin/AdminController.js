@@ -239,8 +239,8 @@ static changePassword = async (req, res) => {
               
             });
             req.flash("success", "Password Updated successfully ");
-
-            res.redirect("/admin/dashboard");
+            res.clearCookie("token");
+            res.redirect("/");
           }
         }
       } else {
